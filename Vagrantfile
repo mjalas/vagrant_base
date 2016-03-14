@@ -18,7 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
 
   config.vm.provision "shell", path: base_provision
-  vagrant_provision['extra_provision'].each do |filename|
+  vagrant_provision['extra-provision'].each do |filename|
   	if !filename.nil? && !filename.empty?
   		config.vm.provision "shell", path: "#{provision_path}/#{filename}"
     end
