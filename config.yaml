@@ -1,0 +1,7 @@
+configs:
+  provision:
+    provision-folder: "provisioning"
+    base-provision: "base_provision.sh"  
+    extra_provision:
+      - ""
+    
